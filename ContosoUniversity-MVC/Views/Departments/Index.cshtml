@@ -4,7 +4,7 @@
     ViewData["Title"] = "Departments";
 }
 
-<h1>Departments</h1>
+<h2>Departments</h2>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -48,7 +48,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Administrator.FullName)
             </td>
-            <td>
+            <td class="text-nowrap">
                 <a asp-action="Edit" asp-route-id="@item.DepartmentID">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.DepartmentID">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.DepartmentID">Delete</a>
